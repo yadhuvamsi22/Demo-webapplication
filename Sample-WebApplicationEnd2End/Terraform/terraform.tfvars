@@ -1,0 +1,2 @@
+prefix ="illuru"
+location = "WestUS"

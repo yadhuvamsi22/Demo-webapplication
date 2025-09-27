@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapplication
+  template:
+    metadata:
+      name: sample-pod
+      labels:              
+        app: webapplication
+    spec:
+      containers:          
+        - name: webapp     
+          image: yadhuvamsi/node-webapp:latest
+          ports:           
+            - containerPort: 3000
