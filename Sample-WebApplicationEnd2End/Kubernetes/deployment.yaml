@@ -15,6 +15,6 @@ spec:
     spec:
       containers:          
         - name: webapp     
-          image: yadhuvamsi/node-webapp:latest
+          image: yadhuvamsi/node-webapp:latest #name of image which we have pused to acr
           ports:           
             - containerPort: 3000
